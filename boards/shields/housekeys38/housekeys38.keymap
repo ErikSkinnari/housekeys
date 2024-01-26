@@ -1,0 +1,50 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define DEFAULT 0
+#define BT 1
+#define FN 2
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap;
+
+        default_layer {
+            bindings = <
+                &kp Q       &kp W       &kp F       &kp P       &kp B                                                               &kp J       &kp L       &kp U       &kp Y       &mt Å Ä
+                &kp A       &kp R       &kp S       &kp T       &kp G                                                               &kp M       &kp N       &kp E       &kp I       &mt O Ö
+                &kp Z       &kp X       &kp C       &kp D       &kp V                                                               &kp K       &kp H       &kp ,       &kp .       &kp -
+                                                    &LGUI       &kp LCTRL   &mt LSHFT SPACE   &lt FN SPACE            &lt BT DEL    &lt FN RET  &kp BSPC    &kp RALT
+            >;
+        };
+
+        default_layer {
+            bindings = <
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                                                    &none       &none       &none       &none               &none       &none       &none       &none
+            >;
+        };
+
+        default_layer {
+            bindings = <
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                                                    &none       &none       &none       &none               &none       &none       &none       &none
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+                &bootloader       &none       &none       &none       &bt BT_CLR                                                    &none       &none       &none       &none       &none
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                                                 &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
+                                                    &none       &none       &none       &none               &none       &none       &none       &none
+            >;
+        };
+    };
+};
