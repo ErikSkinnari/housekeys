@@ -18,19 +18,19 @@
 
         fn_layer {
             bindings = <
-                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
-                                                    &none       &none       &none       &none               &none       &none       &none       &none
+                &transform       &transform       &transform       &transform       &transform                                                               &transform       &transform       &transform       &transform       &transform
+                &transform       &transform       &transform       &transform       &transform                                                               &transform       &transform       &transform       &transform       &transform
+                &transform       &transform       &transform       &transform       &transform                                                               &transform       &transform       &transform       &transform       &transform
+                                                    &transform       &transform       &transform       &transform               &transform       &transform       &transform       &transform
             >;
         };
 
         bt_layer {
             bindings = <
-                &bootloader       &none       &none       &none       &bt BT_CLR                                                    &none       &none       &none       &none       &none
-                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                                                 &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &none                                                               &none       &none       &none       &none       &none
-                                                    &none       &none       &none       &none               &none       &none       &none       &none
+                &bootloader       &transform       &transform       &transform       &bt BT_CLR                                                    &transform       &transform       &transform       &transform       &transform
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                                                 &transform       &transform       &transform       &transform       &transform
+                &transform       &transform       &transform       &transform       &transform                                                               &transform       &transform       &transform       &transform       &transform
+                                                    &transform       &transform       &transform       &transform               &transform       &transform       &transform       &transform
             >;
         };
     };
