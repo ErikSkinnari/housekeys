@@ -12,7 +12,7 @@
             tt: this_or_that {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping-term-ms = <150>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -27,7 +27,7 @@
                 &kp Q       &kp W       &kp F       &kp P           &kp B                                               &kp J           &kp L       &kp U           &kp Y       &tt SQT LBKT
                 &kp A       &kp R       &kp S       &kp T           &mt LCTRL G                                         &mt LCTRL M     &kp N       &kp E           &kp I       &tt SEMI O
                 &kp Z       &kp X       &kp C       &kp D           &kp V                                               &kp K           &kp H       &kp COMMA       &kp DOT     &kp FSLH
-                                        &mo BT      &kp LGUI        &mt LSHFT SPACE &lt FN SPACE       &lt SYMBOLS BSPC &mt RSHIFT RETURN &mt RALT DEL&to SYMBOLS
+                                        &mo BT      &kp LGUI        &mt LSHFT SPACE &lt FN SPACE       &lt SYMBOLS RETURN &mt RSHIFT BSPC &mt RALT DEL&to SYMBOLS
             >;
         };
 
