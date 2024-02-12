@@ -7,6 +7,11 @@
 #define FN          2
 #define BT          3
 
+
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
         behaviors {
             tt: this_or_that {
