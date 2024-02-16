@@ -28,7 +28,7 @@
                 &kp Q       &kp W       &kp F       &kp P           &kp B                                               &kp J           &kp L       &kp U           &kp Y       &tt SQT LBKT
                 &kp A       &kp R       &kp S       &kp T           &tt LCTRL G                                         &tt LCTRL M     &kp N       &kp E           &kp I       &tt SEMI O
                 &kp Z       &kp X       &kp C       &kp D           &kp V                                               &kp K           &kp H       &kp COMMA       &kp DOT     &kp FSLH
-                                        &mo BT      &kp LGUI        &mt LSHFT SPACE &lt FN SPACE       &lt SYMBOLS RETURN &mt RSHIFT BSPC &mt RALT DEL&to SYMBOLS
+                                        &mo BT      &kp LGUI        &mt LSHFT SPACE &lt SYMBOLS SPACE       &lt FN RETURN &mt RSHIFT BSPC &mt RALT DEL&to SYMBOLS
             >;
         };
 
@@ -44,7 +44,7 @@
         fn_layer {
             bindings = <
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &trans       &trans         &trans      &trans
-                &trans      &trans      &trans      &trans          &trans                                              &kp LEFT        &kp DOWN     &kp UP         &kp RIGHT   &trans
+                &trans      &trans      &trans      &trans          &trans                                              &trans          &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &kp HOME     &kp END        &kp INS     &trans
                                         &to DEFAULT &trans          &trans          &trans                  &trans      &trans          &trans       &to BT
             >;
