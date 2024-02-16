@@ -37,7 +37,7 @@
                 &kp ESC     &kp LS(N1)  &kp LS(N2)  &kp BACKSLASH   &kp LS(PLUS)                                        &kp LS(N6)      &kp N7       &kp N8         &kp N9      &kp LS(N7)
                 &kp RA(N8)  &kp RA(N9)  &kp RA(N7)  &kp RA(N0)      &kp RA(NUBS)                                        &kp FSLH        &kp N4       &kp N5         &kp N6      &kp LS(BACKSLASH)
                 &kp NUBS    &kp LS(NUBS)&kp LS(N8)  &kp LS(N9)      &kp LS(MINUS)                                       &kp MINUS       &kp N1       &kp N2         &kp N3      &kp LS(N0)
-                                        &to DEFAULT &kp LALT        &lt FN SPACE    &kp TAB                 &trans      &trans          &kp N0       &to FN
+                                        &to DEFAULT &kp LALT        &lt FN SPACE     &trans                &kp TAB      &trans          &kp N0       &to FN
             >;
         };
         
