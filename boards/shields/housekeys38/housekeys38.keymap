@@ -13,7 +13,7 @@
             tt: this_or_that {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping-term-ms = <200>;
+                tapping-term-ms = <135>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -43,7 +43,7 @@
         
         fn_layer {
             bindings = <
-                &trans      &trans      &trans      &trans          &trans                                              &trans          &kp LS(RBKT) &kp RA(RBKT)   &kp RBKT    &trans
+                &trans      &trans      &trans      &trans          &trans                                              &kp RA(MINUS)   &kp LS(RBKT) &kp RA(RBKT)   &kp RBKT    &trans
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &kp HOME     &kp END        &kp INS     &trans
                                         &to DEFAULT &trans          &trans          &trans                  &trans      &trans          &trans       &to BT
