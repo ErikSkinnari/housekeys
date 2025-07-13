@@ -2,8 +2,8 @@
 
 / {
     housekeys_transform: housekeys_transform {
-        compatible = "zmk,transform";
-        transform = <0 0 0>;
+        compatible = "zmk,layout-transform";
+        map = <0 0 0>;
     };
     housekeys_layout: housekeys38_layout {
         compatible = "zmk,physical-layout";
