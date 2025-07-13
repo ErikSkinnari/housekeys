@@ -1,5 +1,5 @@
 #include <physical_layouts.dtsi>
-#include <housekeys38.dtsi>
+#include "housekeys38.dtsi"
 
 / {
     housekeys_layout: housekeys38_layout {
