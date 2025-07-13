@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "housekeys38_layouts.dtsi"
+#include "housekeys38-layouts.dtsi"
 
 / {
     chosen {
