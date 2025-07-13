@@ -1,10 +1,15 @@
 #include <physical_layouts.dtsi>
 
 / {
+    housekeys_transform: housekeys_transform {
+        compatible = "zmk,transform";
+        transform = <0 0 0>;
+    };
+
     housekeys_layout: housekeys38_layout {
         compatible = "zmk,physical-layout";
         display-name = "housekeys38";
-        transform = <0 0 0>;  // <-- Required!
+        transform = <&housekeys_transform>;
 
         keys = <
         // Row 0
@@ -47,15 +52,15 @@
             &key_physical_attrs 100 100 1100  237    0     0     0
 
         // Row 3 (thumb clusters — 4 per side)
-            &key_physical_attrs 100 100  150  312    0     0     0
-            &key_physical_attrs 100 100  250  312    0     0     0
-            &key_physical_attrs 100 100  350  312  1200   350   412
-            &key_physical_attrs 100 150  448  283  2400   448   433
+            &key_physical_attrs 100 100  150  312   0     0     0
+            &key_physical_attrs 100 100  360  320   500   350   300
+            &key_physical_attrs 100 100  450  330   1200  450   412
+            &key_physical_attrs 100 100  555  350   1800  550   423
 
-            &key_physical_attrs 100 150  652  283 (-2400)   752   433
-            &key_physical_attrs 100 100  750  312 (-1200)   850   412
-            &key_physical_attrs 100 100  850  312    0     0     0
-            &key_physical_attrs 100 100  950  312    0     0     0
+            &key_physical_attrs 100 100  750  350 (-1800)   850   423
+            &key_physical_attrs 100 100  850  350 (-1200)   850   412
+            &key_physical_attrs 100 100  940  330  (-500)   960   300
+            &key_physical_attrs 100 100 1050  320       0     0     0
         >;
     };
 };
