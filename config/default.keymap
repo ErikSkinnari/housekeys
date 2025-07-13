@@ -13,7 +13,7 @@
             tt: this_or_that {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping-term-ms = <180>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -26,7 +26,7 @@
         default_layer {
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P           &kp B                                               &kp J           &kp L       &kp U           &kp Y       &tt SQT LBKT
-                &tt LCTRL A &tt LALT R  &tt RALT S  &tt LSHFT T     &tt LCTRL G                                         &tt LCTRL M     &tt RSHFT N &tt RALT E      &kp I       &tt SEMI O
+                &kp A       &kp R       &kp S       &kp T           &tt LCTRL G                                         &tt LCTRL M     &kp N       &kp E           &kp I       &tt SEMI O
                 &kp Z       &kp X       &kp C       &kp D           &kp V                                               &kp K           &kp H       &kp COMMA       &kp DOT     &kp FSLH
                                         &mo BT      &kp LGUI        &mt LSHFT SPACE &lt SYMBOLS SPACE       &lt FN RETURN &mt RSHIFT BSPC &mt RALT DEL&to SYMBOLS
             >;
@@ -40,10 +40,10 @@
                                         &to DEFAULT &kp LALT        &lt FN SPACE     &trans                &kp TAB      &trans          &kp N0       &to FN
             >;
         };
-
+        
         fn_layer {
             bindings = <
-                &trans      &trans      &trans      &trans          &trans                                              &kp RA(MINUS)   &kp LS(RBKT) &kp RA(RBKT)   &kp RBKT    &trans
+                &trans      &trans      &trans      &trans          &trans                                              &trans          &kp LS(RBKT) &kp RA(RBKT)   &kp RBKT    &trans
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT
                 &trans      &trans      &trans      &trans          &trans                                              &trans          &kp HOME     &kp END        &kp INS     &trans
                                         &to DEFAULT &trans          &trans          &trans                  &trans      &trans          &trans       &to BT
@@ -52,7 +52,7 @@
 
         bt_layer {
             bindings = <
-                &bootloader &trans      &trans      &bt BT_CLR_ALL  &bt BT_CLR                                          &trans          &trans       &trans         &trans      &bootloader
+                &bootloader &trans      &trans      &bt BT_CLR_ALL  &bt BT_CLR                                          &studio_unlock  &trans       &trans         &trans      &bootloader
                 &bt BT_SEL 0&bt BT_SEL 1&bt BT_SEL 2&bt BT_SEL 3    &bt BT_SEL 4                                        &trans          &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT 
                 &trans      &trans      &trans      &trans          &bt BT_DISC                                         &trans          &trans       &trans         &trans      &trans
                                         &to DEFAULT &trans          &trans          &trans                   &trans     &trans          &trans       &trans
@@ -60,4 +60,3 @@
         };
     };
 };
-
