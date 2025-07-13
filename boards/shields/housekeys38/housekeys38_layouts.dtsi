@@ -1,14 +1,11 @@
 #include <physical_layouts.dtsi>
+#include <housekeys38.dtsi>
 
 / {
-    housekeys_transform: housekeys_transform {
-        compatible = "zmk,layout-transform";
-        map = <0 0 0>;
-    };
     housekeys_layout: housekeys38_layout {
         compatible = "zmk,physical-layout";
         display-name = "housekeys38";
-        transform = <&housekeys_transform>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
