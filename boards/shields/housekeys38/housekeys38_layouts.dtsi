@@ -4,6 +4,7 @@
     housekeys_layout: housekeys38_layout {
         compatible = "zmk,physical-layout";
         display-name = "housekeys38";
+        transform = <0 0 0>;  // <-- Required!
 
         keys = <
         // Row 0
